@@ -496,6 +496,10 @@ a[href^=tel] {
   text-decoration: none;
 }
 
+#formMessage {
+  min-height: 100px;
+}
+
 /* Button */
 .btn:active, .btn:focus {
   -webkit-box-shadow: none !important;
@@ -592,6 +596,7 @@ ul.top-info {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: left !important;
 }
 
 ul.top-info li {
@@ -629,6 +634,7 @@ ul.top-info li p.info-text {
   padding: 0;
   margin: 0;
   margin-right: -12px;
+  text-align: right !important;
 }
 
 @media (max-width: 767px) {

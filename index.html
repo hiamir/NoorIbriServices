@@ -545,7 +545,8 @@
               </div>
 
               <div class="col-md-7 newsletter-form">
-                <form action="#" method="post">
+                <form id="subscribe" name='google-sheet' action="https://api.sheetmonkey.io/form/5rShgrEMQMsEVamrHN9bsJ"
+                  method="post">
                   <div class="form-group">
                     <label for="newsletter-email" class="content-hidden">Newsletter Email</label>
                     <input type="email" name="email" id="newsletter-email" class="form-control form-control-lg"
@@ -595,7 +596,7 @@
                       placeholder="" type="text">
                   </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 pt-3">
                   <div class="form-group">
                     <label>Subject</label>
                     <input id="formSubject" class="form-control form-control-subject" name="subject" id="subject"
@@ -603,9 +604,9 @@
                   </div>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group  pt-3">
                 <label>Message</label>
-                <textarea id="formMessage" class="form-control form-control-message" name="message" id="message"
+                <textarea id="formMessage" class="form-control form-control-message" name="message"
                   placeholder="" rows="10" required></textarea>
               </div>
               <div class="text-right"><br>
@@ -726,7 +727,7 @@
       <div class="copyright">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <div class="copyright-info text-center text-md-left">
                 <span>Copyright &copy; <script>
                     document.write(new Date().getFullYear())
@@ -735,18 +736,7 @@
               </div>
             </div>
 
-            <div class="col-md-6">
-              <div class="footer-menu text-center text-md-right">
-                <ul class="list-unstyled">
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="team.html">Our people</a></li>
-                  <li><a href="faq.html">Faq</a></li>
-                  <li><a href="news-left-sidebar.html">Blog</a></li>
-                  <li><a href="pricing.html">Pricing</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>Row end
+          </div>
 
           <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
             <button class="btn btn-primary" title="Back to Top">
@@ -765,14 +755,9 @@
     <!-- initialize jQuery Library -->
     <script src="plugins/jQuery/jquery.min.js"></script>
     <!-- Bootstrap jQuery -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
-    </script>
 
-    <!-- <script src="plugins/bootstrap/bootstrap.min.js" defer></script> -->
+
+    <script src="plugins/bootstrap/bootstrap.min.js" defer></script>
     <!-- Slick Carousel -->
     <script src="plugins/slick/slick.min.js"></script>
     <script src="plugins/slick/slick-animation.min.js"></script>
@@ -783,16 +768,46 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/4.0.6/sweetalert2.min.js"></script>
 
-    <!-- Google Map API Key-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
-    <!-- Google Map Plugin-->
-    <script src="plugins/google-map/map.js" defer></script>
-
     <!-- Template custom -->
     <script src="js/script.js"></script>
 
     <script>
       $(document).ready(function () {
+
+
+
+        const scriptURL =
+          'https://script.google.com/macros/s/AKfycbx4zzdHWt_C-ou5X6Ot9M_9FjD4PEwcfhQAo2b2xLaGWUcvS4-sKzQohwGVLD9UN_Fr/exec'
+        const form = document.forms['google-sheet']
+
+        $('#subscribe').submit(function (e) {
+          // form.addEventListener('submit', e => {
+          e.preventDefault()
+
+          fetch(scriptURL, {
+              method: 'POST',
+              body: new FormData(form)
+            })
+            .catch(error => console.error('Error!', error.message))
+            .then(function (result) {
+
+              $.ajax({
+                success: function (response) {
+                  swal({
+                    title: 'Subscription.',
+                    html: '<p>Your email has been added to our database for newletters for news, offers and latest updates</p>',
+                    type: 'success',
+                  });
+                  $("#subscribe")[0].reset()
+                }
+              });
+
+            });
+
+        });
+
+
+
 
 
         $("#contact-form").submit(function (event) {
@@ -812,21 +827,22 @@
             dataType: 'json',
             accepts: 'application/json',
             data: formData,
-            success: (data) => console.log(data),
+            success: (data) => $.ajax({
+              success: function (response) {
+                swal({
+                  title: 'Thank you for contacting us.',
+                  html: '<p>We have received your enquiry and will respond to you within 24 hours.  For urgent enquiries please call us on one of the telephone numbers below.</p>',
+                  type: 'success',
+                });
+                $("#contact-form")[0].reset()
+              }
+            }),
             error: (err) => console.log(err)
           });
 
 
         });
-        $(document).ajaxSuccess(function () {
-          swal({
-            title: 'Thank you for contacting us.',
-            html: '<p>We have received your enquiry and will respond to you within 24 hours.  For urgent enquiries please call us on one of the telephone numbers below.</p>',
-            type: 'success',
-          });
-          $("#contact-form")[0].reset()
-        });
-
+       
         $(".myScrollspy").on('click', function (event) {
           event.preventDefault();
           var hash = this.hash;
