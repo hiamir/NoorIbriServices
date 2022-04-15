@@ -1145,6 +1145,20 @@ ul.navbar-nav > li > a {
   padding-right: 0;
 }
 
+.nav-mode {
+  position: absolute;
+  cursor: pointer;
+  top: 22px;
+  right: 50px;
+  color: #999;
+}
+
+@media (max-width: 991px) {
+  .nav-mode {
+    top: 17px;
+  }
+}
+
 .nav-search {
   position: absolute;
   cursor: pointer;
@@ -1157,6 +1171,30 @@ ul.navbar-nav > li > a {
   .nav-search {
     top: 17px;
   }
+}
+
+#dark-logo {
+  display: none;
+}
+
+#dark-logo.active {
+  display: block;
+}
+
+#light-logo {
+  display: none;
+}
+
+#light-logo.active {
+  display: block;
+}
+
+#dark-mode:hover .fas {
+  color: white !important;
+}
+
+#dark-mode.active {
+  color: white;
 }
 
 .search-block {
@@ -3614,3 +3652,129 @@ label {
   padding-top: 0%;
   padding-bottom: 0%;
 }
+
+#main-wrapper.dark-mode {
+  background: #222;
+}
+
+#main-wrapper.dark-mode .into-title, #main-wrapper.dark-mode .section-sub-title {
+  color: #ccc;
+}
+
+#main-wrapper.dark-mode .into-sub-title, #main-wrapper.dark-mode .section-title {
+  color: white;
+}
+
+#main-wrapper.dark-mode p {
+  color: #ccc;
+}
+
+#main-wrapper.dark-mode .service-box-title {
+  color: white;
+}
+
+#main-wrapper.dark-mode .service-box-title a {
+  color: white;
+}
+
+#main-wrapper.dark-mode #top-bar {
+  background: #444;
+}
+
+#main-wrapper.dark-mode #top-bar .container .row .col-lg-8 .top-info li .fas {
+  color: white;
+}
+
+#main-wrapper.dark-mode #top-bar .container .row .col-lg-8 .top-info li .info-text {
+  color: white;
+}
+
+#main-wrapper.dark-mode #top-bar .container .row .col-lg-4 .list-unstyled li a .social-icon .fab {
+  color: white;
+}
+
+#main-wrapper.dark-mode #header .bg-white {
+  background: black !important;
+}
+
+#main-wrapper.dark-mode #header .bg-white .container .logo-area .row .col-lg-9 .top-info-box li .info-box .info-box-content .info-box-title {
+  color: #ccc;
+}
+
+#main-wrapper.dark-mode #header .bg-white .container .logo-area .row .col-lg-9 .top-info-box li .info-box .info-box-content .info-box-subtitle a {
+  color: white;
+}
+
+#main-wrapper.dark-mode #header .site-navigation {
+  background: #ccc;
+}
+
+#main-wrapper.dark-mode #header .site-navigation .container .row .col-lg-12 .navbar #navbar-collapse .nav .nav-item .myScrollspy {
+  color: #222 !important;
+}
+
+#main-wrapper.dark-mode #header .site-navigation .container .row .col-lg-12 .navbar #navbar-collapse .nav .nav-item:hover .myScrollspy {
+  color: #ff0000 !important;
+}
+
+#main-wrapper.dark-mode #header .site-navigation .container .nav-mode #dark-mode .fas {
+  color: #999 !important;
+}
+
+#main-wrapper.dark-mode #header .site-navigation .container .nav-mode #dark-mode:hover .fas {
+  color: black !important;
+}
+
+#main-wrapper.dark-mode #ts-features .container .row .col-lg-6 #our-values-accordion .card {
+  background: #222;
+  border-bottom-color: #444 !important;
+}
+
+#main-wrapper.dark-mode #ts-features .container .row .col-lg-6 #our-values-accordion .card .card-header {
+  background: #444 !important;
+}
+
+#main-wrapper.dark-mode #ts-features .container .row .col-lg-6 #our-values-accordion .card .card-header .mb-0 .btn {
+  color: #ccc;
+}
+
+#main-wrapper.dark-mode #ts-features .container .row .col-lg-6 #our-values-accordion .card .collapse.show {
+  background: #666;
+}
+
+#main-wrapper.dark-mode #ts-features .container .row .col-lg-6 #our-values-accordion .card .collapse .card-body {
+  color: #ccc;
+}
+
+#main-wrapper.dark-mode #facts {
+  background: #444;
+}
+
+#main-wrapper.dark-mode #contact .container .row .col-md-8 .ts-newsletter {
+  background-color: #444;
+}
+
+#main-wrapper.dark-mode #contact .container .row .col-md-8 .ts-newsletter::after {
+  background-color: #444;
+}
+
+#main-wrapper.dark-mode .section-padding .container .row .col-md-12 #contact-form .row .col-md-4 .form-group {
+  color: #ccc;
+}
+
+#main-wrapper.dark-mode .section-padding .container .row .col-md-12 #contact-form .row .col-md-4 .form-group:focus .form-control {
+  background-color: #ccc;
+}
+
+#main-wrapper.dark-mode .section-padding .container .row .col-md-12 #contact-form .row .col-md-12 .form-group {
+  color: #ccc;
+}
+
+#main-wrapper.dark-mode .section-padding .container .row .col-md-12 #contact-form .form-group {
+  color: #ccc;
+}
+
+#main-wrapper.dark-mode .contact .container .row .col-md-4 .ts-service-box-bg {
+  background-color: #444;
+}
+/*# sourceMappingURL=style.css.map */

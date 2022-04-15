@@ -41,7 +41,7 @@
 </head>
 
 <body>
-  <div class="body-inner">
+  <div id="main-wrapper"class="body-inner">
 
     <div id="top-bar" class="top-bar">
       <div class="container">
@@ -58,13 +58,13 @@
           <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
             <ul class="list-unstyled">
               <li>
-                <a title="Facebook" href="https://facebook.com/nooribriservices.com">
+                <a title="Facebook" href="https://facebook.com/nooribri.com">
                   <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
                 </a>
-                <a title="Twitter" href="https://twitter.com/nooribriservices.com">
+                <a title="Twitter" href="https://twitter.com/nooribri.com">
                   <span class="social-icon"><i class="fab fa-twitter"></i></span>
                 </a>
-                <a title="Instagram" href="https://instagram.com/nooribriservices.com">
+                <a title="Instagram" href="https://instagram.com/nooribri.com">
                   <span class="social-icon"><i class="fab fa-instagram"></i></span>
                 </a>
 
@@ -86,7 +86,8 @@
             <div class="row align-items-center">
               <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
                 <a class="d-block" href="index.html">
-                  <img loading="lazy" src="images/logo.png" alt="nooribriservices">
+                  <img id="dark-logo" loading="lazy" src="images/logo-dark.png" alt="nooribriservices">
+                  <img id="light-logo" class="active" loading="lazy" src="images/logo.png" alt="nooribriservices">
                 </a>
               </div><!-- logo end -->
 
@@ -96,7 +97,7 @@
                     <div class="info-box">
                       <div class="info-box-content">
                         <p class="info-box-title">Call Us</p>
-                        <p class="info-box-subtitle"><a href="tel:(+968) 256-961-30">(+968) 256-961-30</a></p>
+                        <p class="info-box-subtitle"><a href="tel:(+968) 9288-8691">(+968) 9288-8691</a></p>
                       </div>
                     </div>
                   </li>
@@ -105,7 +106,7 @@
                       <div class="info-box-content">
                         <p class="info-box-title">Email Us</p>
                         <p class="info-box-subtitle"><a
-                            href="mailto:office@nooribriservices.com">office@nooribriservices.com</a></p>
+                            href="mailto:office@nooribri.com">office@nooribri.com</a></p>
                       </div>
                     </div>
                   </li>
@@ -151,7 +152,9 @@
             <!--/ Col end -->
           </div>
           <!--/ Row end -->
-
+          <div class="nav-mode">
+          <span id="dark-mode"><i class="fas fa-moon"></i></span>
+          </div>
           <div class="nav-search">
             <span id="search"><i class="fa fa-search"></i></span>
           </div><!-- Search end -->
@@ -491,9 +494,8 @@
               <div class="ts-service-box-info">
                 <h3 class="service-box-title"><a href="#">Competence Assurance</a></h3>
                 <p>It is a tailor-made online mechanism designed to meet the needs of companies in the process and
-                  manufacturing industries, including petroleum refining, nuclear, chemicals, biotechnology, specialty
-                  chemicals,
-                  pharmaceuticals and polymers.</p>
+                  manufacturing industries, including petroleum refining, chemicals, specialty
+                  chemicals.</p>
               </div>
             </div><!-- Service 4 end -->
 
@@ -533,7 +535,7 @@
           <div class="col-md-4">
             <div class="subscribe-call-to-acton">
               <h3>Can We Help?</h3>
-              <h4>(+968) 256-961-30</h4>
+              <h4>(+968) 9288-8691</h4>
             </div>
           </div><!-- Col end -->
 
@@ -651,7 +653,7 @@
               </span>
               <div class="ts-service-box-content">
                 <h4>Email Us</h4>
-                <p>office@nooribriservices.com</p>
+                <p>office@nooribri.com</p>
               </div>
             </div>
           </div><!-- Col 2 end -->
@@ -663,7 +665,7 @@
               </span>
               <div class="ts-service-box-content">
                 <h4>Call Us</h4>
-                <p>(+968) 256-961-30</p>
+                <p>(+968) 9288-8691</p>
               </div>
             </div>
           </div><!-- Col 3 end -->
@@ -714,7 +716,7 @@
               <div class="working-hours">
                 We work 7 days a week, every day excluding major holidays. Contact us if you have an emergency, with our
                 Hotline and Contact form.
-                <br><br> Sunday - Thursday: <span class="text-right">10:00 - 16:00 </span>
+                <br><br> Sunday - Thursday: <span class="text-right">07:00 - 16:00 </span>
                 <br> Saturday: <span class="text-right">12:00 - 15:00</span>
                 <br> Friday and holidays: <span class="text-right">09:00 - 12:00</span>
               </div>
@@ -731,7 +733,7 @@
               <div class="copyright-info text-center text-md-left">
                 <span>Copyright &copy; <script>
                     document.write(new Date().getFullYear())
-                  </script>, Designed &amp; Developed by <a href="https://nooribriservices.com">Noor Ibri
+                  </script>, Designed &amp; Developed by <a href="https://nooribri.com">Noor Ibri
                     Services</a></span>
               </div>
             </div>
@@ -823,7 +825,7 @@
 
           $.ajax({
             method: 'POST',
-            url: 'https://formsubmit.co/ajax/96ac428d060e98f6555cf7fe3b482afe',
+            url: 'https://formsubmit.co/ajax/office@nooribri.com',
             dataType: 'json',
             accepts: 'application/json',
             data: formData,

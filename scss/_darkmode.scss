@@ -1,0 +1,711 @@
+$backgroundColor:black;
+$backgroundColorDarkGray:#222;
+$backgroundColorLight:#444;
+$backgroundColorLightShow:#666;
+$backgroundColorMenu:#ccc;
+$textColorWhite:white;
+$textColorWhiteLight:#ccc;
+$textColorBlack:black;
+$textColorDarkGray:#222;
+$textColorLightGray:#999;
+
+#main-wrapper.dark-mode {
+	background: $backgroundColorDarkGray;
+
+	.into-title,.section-sub-title {
+		color: $textColorWhiteLight;
+	}
+
+	.into-sub-title,.section-title {
+		color: $textColorWhite;
+	}
+
+	p {
+		color: $textColorWhiteLight;
+	}
+
+	.service-box-title {
+		color: $textColorWhite;
+		a{
+			color: $textColorWhite;
+		}
+	}
+
+	#top-bar {
+		background: $backgroundColorLight;
+
+		.container {
+
+			.row {
+
+				.col-lg-8 {
+
+					.top-info {
+
+						li {
+
+							.fas {
+								color: $textColorWhite;
+							}
+
+							.info-text {
+								color: $textColorWhite;
+							}
+						}
+					}
+				}
+
+				.col-lg-4 {
+
+					.list-unstyled {
+
+						li {
+
+							a {
+
+								.social-icon {
+
+									.fab {
+										color: white;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#header {
+
+		.bg-white {
+			background: $backgroundColor !important;
+
+			.container {
+
+				.logo-area {
+
+					.row {
+
+						.logo {
+
+							.d-block {
+
+								img {}
+							}
+						}
+
+						.col-lg-9 {
+
+							.top-info-box {
+
+								li {
+
+									.info-box {
+
+										.info-box-content {
+
+											.info-box-title {
+												color: $textColorWhiteLight;
+											}
+
+											.info-box-subtitle {
+
+												a {
+													color: $textColorWhite;
+												}
+											}
+										}
+									}
+								}
+
+								.last {
+
+									.info-box {
+
+										.info-box-content {
+
+											.info-box-title {}
+
+											.info-box-subtitle {}
+										}
+									}
+								}
+
+								.header-get-a-quote {
+
+									.myScrollspy {}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.site-navigation {
+			background: $backgroundColorMenu;
+
+			.container {
+
+				.row {
+
+					.col-lg-12 {
+
+						.navbar {
+
+							.navbar-toggler {
+
+								.navbar-toggler-icon {}
+							}
+
+							#navbar-collapse {
+
+								.nav {
+
+									.nav-item {
+
+										.myScrollspy {
+											color: $textColorDarkGray !important;
+										}
+
+										&:hover {
+											.myScrollspy {
+												color: #ff0000 !important;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.nav-mode {
+
+					#dark-mode {
+
+						.fas {
+							color: $textColorLightGray !important;
+						}
+
+						&:hover {
+							.fas {
+								color: $textColorBlack !important;
+							}
+						}
+					}
+				}
+
+				.nav-search {
+
+					#search {
+
+						.fa {}
+					}
+				}
+
+				.search-block {
+
+					.w-100 {
+
+						#search-field {}
+					}
+
+					.search-close {}
+				}
+			}
+		}
+	}
+
+	.banner-carousel {
+
+		.carousel-control {
+
+			.fas {}
+		}
+
+		.slick-list {
+
+			.slick-track {
+
+				.banner-carousel-item {
+
+					.slider-content {
+
+						.container {
+
+							.row {
+
+								.col-md-12 {
+
+									.slide-title {}
+
+									.slide-sub-title {}
+
+									.slider-description {}
+
+									div {
+
+										.myScrollspy {}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				#slick-slide00 {
+
+					.slider-content {
+
+						.container {
+
+							.row {
+
+								.col-md-12 {
+
+									.slide-title {}
+
+									.slide-sub-title {}
+
+									p {
+
+										.myScrollspy {}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				#slick-slide01 {
+
+					.slider-content {
+
+						.container {
+
+							.row {
+
+								.col-md-12 {
+
+									.slide-title-box {}
+
+									.slide-title {}
+
+									.slide-sub-title {}
+
+									.slideInRight {
+
+										.myScrollspy {}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				#slick-slide02 {
+
+					.slider-content {
+
+						.container {
+
+							.row {
+
+								.col-md-12 {
+
+									.slide-title {}
+
+									.slide-sub-title {}
+
+									.slider-description {}
+
+									div {
+
+										.myScrollspy {}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.slick-dots {
+
+			li {
+
+				#slick-slide-control00 {}
+			}
+
+			.slick-active {
+
+				#slick-slide-control01 {}
+			}
+		}
+	}
+
+	.call-to-action-box {
+
+		.container {
+
+			.action-style-box {
+
+				.row {
+
+					.col-md-8 {
+
+						.call-to-action-text {
+
+							.action-title {}
+						}
+					}
+
+					.col-md-4 {
+
+						.call-to-action-btn {
+
+							.myScrollspy {}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#ts-features {
+
+		.container {
+
+			.row {
+
+				.col-lg-6 {
+
+					.ts-intro {
+
+						.into-title {}
+
+						.into-sub-title {}
+
+						p {}
+					}
+
+					.gap-20 {}
+
+					.row {
+
+						.col-md-6 {
+
+							.ts-service-box {
+
+								.ts-service-icon {
+
+									.fas {}
+								}
+
+								.ts-service-box-content {
+
+									.service-box-title {}
+								}
+							}
+						}
+					}
+				}
+
+				.col-lg-6 {
+					#our-values-accordion {
+
+						.card {
+							background: $textColorDarkGray;
+							border-bottom-color: $backgroundColorLight !important;
+
+							.card-header {
+								background: $backgroundColorLight !important;
+
+								.mb-0 {
+
+									.btn {
+										color: $textColorWhiteLight;
+									}
+								}
+							}
+
+							.collapse {
+								&.show{
+									background: $backgroundColorLightShow;
+								}
+
+								.card-body {
+									color: $textColorWhiteLight;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#facts {
+background:$backgroundColorLight;
+		.container {
+
+			.facts-wrapper {
+
+				.row {
+
+					.col-md-3 {
+
+						.ts-facts-img {
+
+							img {}
+						}
+
+						.ts-facts-content {
+
+							.ts-facts-num {
+
+								.counterUp {}
+							}
+
+							.ts-facts-title {}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#ts-service-area {
+
+		.container {
+
+			.row {
+
+				.col-12 {
+
+					.section-title {}
+
+					.section-sub-title {}
+				}
+			}
+		}
+	}
+
+	#contact {
+		
+		.container {
+
+			.row {
+
+				.col-md-4 {
+				
+					.subscribe-call-to-acton {
+
+						h3 {}
+
+						h4 {}
+					}
+				}
+
+				.col-md-8 {
+
+					.ts-newsletter {
+background-color: $backgroundColorLight;
+
+						&::after{
+							background-color: $backgroundColorLight;
+						}
+						.col-md-5 {
+
+							.text-white {}
+						}
+
+						.col-md-7 {
+
+							#subscribe {
+
+								.form-group {
+
+									.content-hidden {}
+
+									#newsletter-email {}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.section-padding {
+
+		.container {
+
+			.row {
+
+				.col-md-12 {
+
+					.column-title {}
+
+					#contact-form {
+
+						.error-container {}
+
+						.row {
+
+							.col-md-4 {
+
+								.form-group {
+color:$textColorWhiteLight;
+									label {}
+
+									.form-control {
+									}
+
+									&:focus{
+										.form-control {
+											background-color: $backgroundColorMenu;
+										}
+									}
+								}
+							}
+
+							.col-md-12 {
+
+								.form-group {
+									color:$textColorWhiteLight;
+									label {}
+
+									#formSubject {}
+								}
+							}
+						}
+
+						.form-group {
+							color:$textColorWhiteLight;
+							label {}
+
+							#formMessage {}
+						}
+
+						.text-right {
+
+							br {}
+
+							input {}
+
+							.btn {}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.contact {
+
+		.container {
+
+			.row {
+				.col-md-4{
+					.ts-service-box-bg{
+background-color: $backgroundColorLight;
+					}
+				}
+
+				.col-12 {
+
+					.section-title {}
+
+					.section-sub-title {}
+				}
+			}
+
+			.gap-60 {}
+
+			.gap-40 {}
+		}
+	}
+
+	iframe {}
+
+	#footer {
+
+		.footer-main {
+
+			.container {
+
+				.row {
+
+					.col-lg-8 {
+
+						.widget-title {}
+
+						.footer-logo {}
+
+						p {}
+
+						.footer-social {
+
+							ul {
+
+								li {
+
+									a {
+
+										.fab {}
+									}
+								}
+							}
+						}
+					}
+
+					.col-lg-4 {
+
+						.widget-title {}
+
+						.working-hours {
+
+							br {}
+
+							.text-right {}
+						}
+					}
+				}
+			}
+		}
+
+		.copyright {
+
+			.container {
+
+				.row {
+
+					.col-md-12 {
+
+						.copyright-info {
+
+							span {
+
+								a {}
+							}
+						}
+					}
+				}
+
+				#back-to-top {
+
+					.btn {
+
+						.fa {}
+					}
+				}
+			}
+		}
+	}
+}

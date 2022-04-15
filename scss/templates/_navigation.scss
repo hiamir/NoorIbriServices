@@ -555,6 +555,18 @@ ul.navbar-nav>li>a {
   padding-right: 0;
 }
 
+.nav-mode {
+  position: absolute;
+  cursor: pointer;
+  top: 22px;
+  right: 50px;
+  color: #999;
+  @include desktop {
+    top: 17px;
+  }
+  
+}
+
 .nav-search {
   position: absolute;
   cursor: pointer;
@@ -564,6 +576,32 @@ ul.navbar-nav>li>a {
   @include desktop {
     top: 17px;
   }
+}
+
+#dark-logo{
+  display:none;
+  &.active{
+    display:block;
+  }
+}
+
+#light-logo{
+  display:none;
+  &.active{
+    display:block;
+  }
+}
+
+#dark-mode{
+  &:hover{
+    .fas { 
+      color:white !important;
+    }
+  }
+}
+
+#dark-mode.active{
+  color:white;
 }
 
 

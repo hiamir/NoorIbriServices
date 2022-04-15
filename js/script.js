@@ -4,6 +4,10 @@ jQuery(function ($) {
 	/* ----------------------------------------------------------- */
 	/*  Fixed header
 	/* ----------------------------------------------------------- */
+
+	
+
+
 	$(window).on('scroll', function () {
 
 		// fixedHeader on scroll
@@ -260,6 +264,13 @@ jQuery(function ($) {
 		mediaPopup();
 
 	});
+
+	$('#dark-mode').click(function(){
+		$("#light-logo").toggleClass('active');
+		$("#dark-logo").toggleClass('active');
+		$(this).toggleClass('active');
+		$('#main-wrapper').toggleClass('dark-mode');
+	})
 
 
 });
