@@ -1159,6 +1159,10 @@ ul.navbar-nav > li > a {
   }
 }
 
+.nav-mode i {
+  font-size: 1.0rem;
+}
+
 .nav-search {
   position: absolute;
   cursor: pointer;
@@ -1173,12 +1177,20 @@ ul.navbar-nav > li > a {
   }
 }
 
+.nav-search i {
+  font-size: 1.0rem;
+}
+
 #dark-logo {
   display: none;
 }
 
 #dark-logo.active {
   display: block;
+}
+
+#dark-logo i {
+  font-size: 1.2rem;
 }
 
 #light-logo {

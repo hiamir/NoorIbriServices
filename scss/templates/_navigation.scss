@@ -564,6 +564,9 @@ ul.navbar-nav>li>a {
   @include desktop {
     top: 17px;
   }
+  i{
+    font-size:1.0rem;
+  }
   
 }
 
@@ -576,12 +579,18 @@ ul.navbar-nav>li>a {
   @include desktop {
     top: 17px;
   }
+  i{
+    font-size:1.0rem;
+  }
 }
 
 #dark-logo{
   display:none;
   &.active{
     display:block;
+  }
+  i{
+    font-size:1.2rem;
   }
 }
 
