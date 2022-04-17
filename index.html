@@ -605,6 +605,8 @@
                       placeholder="" required>
                   </div>
                 </div>
+                <input id="formEmailSubject" type="hidden" name="_subject" value="New enquiry!">
+                <input type="text" name="_honey" style="display:none">
               </div>
               <div class="form-group  pt-3">
                 <label>Message</label>
@@ -672,9 +674,8 @@
 
         </div><!-- 1st row end -->
 
-        <div class="gap-60"></div>
+       
 
-        <div class="gap-40"></div>
 
       </div><!-- Conatiner end -->
     </section><!-- Main container end -->
@@ -775,11 +776,8 @@
 
     <script>
       $(document).ready(function () {
-
-
-
         const scriptURL =
-          'https://script.google.com/macros/s/AKfycbx4zzdHWt_C-ou5X6Ot9M_9FjD4PEwcfhQAo2b2xLaGWUcvS4-sKzQohwGVLD9UN_Fr/exec'
+          'https://script.google.com/macros/s/AKfycbwAlDtUSFJdlAGxEP-QTiIa16Q1yBxyZtnFyQfIQZ5o8XH5q2zaitQNOJclEvVhhmOZ/exec'
         const form = document.forms['google-sheet']
 
         $('#subscribe').submit(function (e) {
