@@ -59,6 +59,7 @@ ul.top-info li i {
 
 ul.top-info li p.info-text {
   margin: 0;
+  font-size: 14px;
   line-height: normal;
   display: inline-block;
   -webkit-flex-direction: column;
@@ -524,6 +525,7 @@ ul.navbar-nav>li>a {
 }
 
 @media (min-width: 991px) {
+ 
   ul.nav li.dropdown ul.dropdown-menu li.dropdown-submenu .dropdown-menu {
     left: 100%;
     top: 0;
@@ -559,7 +561,7 @@ ul.navbar-nav>li>a {
   position: absolute;
   cursor: pointer;
   top: 22px;
-  right: 50px;
+  right: 85px;
   color: #999;
   @include desktop {
     top: 17px;
@@ -573,8 +575,9 @@ ul.navbar-nav>li>a {
 .nav-search {
   position: absolute;
   cursor: pointer;
+  display:none;
   top: 22px;
-  right: 18px;
+  right: 100px;
   color: #999;
   @include desktop {
     top: 17px;

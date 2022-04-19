@@ -2282,3 +2282,30 @@ label {
   padding-top: 0%;     
   padding-bottom: 0%;  
 }
+
+@media (max-width: 991px) {
+
+section{
+  padding:0rem 1rem !important;
+}
+#facts{
+  padding:5rem 1rem !important;
+}
+
+#ts-service-area{
+  padding-top:5rem !important;
+}
+
+#contact{
+  padding-bottom:2rem !important;
+}
+
+#message,#contact{
+  padding-top:5rem !important;
+
+}
+
+#footer .footer-main{
+  padding:3rem 1rem !important;
+}
+}

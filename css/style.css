@@ -616,6 +616,7 @@ ul.top-info li i {
 
 ul.top-info li p.info-text {
   margin: 0;
+  font-size: 14px;
   line-height: normal;
   display: inline-block;
   -ms-flex-direction: column;
@@ -1149,7 +1150,7 @@ ul.navbar-nav > li > a {
   position: absolute;
   cursor: pointer;
   top: 22px;
-  right: 50px;
+  right: 85px;
   color: #999;
 }
 
@@ -1166,8 +1167,9 @@ ul.navbar-nav > li > a {
 .nav-search {
   position: absolute;
   cursor: pointer;
+  display: none;
   top: 22px;
-  right: 18px;
+  right: 100px;
   color: #999;
 }
 
@@ -3665,6 +3667,27 @@ label {
   padding-bottom: 0%;
 }
 
+@media (max-width: 991px) {
+  section {
+    padding: 0rem 1rem !important;
+  }
+  #facts {
+    padding: 5rem 1rem !important;
+  }
+  #ts-service-area {
+    padding-top: 5rem !important;
+  }
+  #contact {
+    padding-bottom: 2rem !important;
+  }
+  #message, #contact {
+    padding-top: 5rem !important;
+  }
+  #footer .footer-main {
+    padding: 3rem 1rem !important;
+  }
+}
+
 #main-wrapper.dark-mode {
   background: #222;
 }
@@ -3788,5 +3811,273 @@ label {
 
 #main-wrapper.dark-mode .contact .container .row .col-md-4 .ts-service-box-bg {
   background-color: #444;
+}
+
+.btn-toggle {
+  padding: 0;
+  border: none;
+  height: 1.5rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+  color: #6b7381;
+  background: #9999;
+  position: absolute;
+  cursor: pointer;
+  top: 22px;
+  right: 18px;
+  color: #999;
+}
+
+@media (max-width: 991px) {
+  .btn-toggle {
+    top: 17px;
+  }
+}
+
+.btn-toggle:focus,
+.btn-toggle.focus,
+.btn-toggle:focus.active,
+.btn-toggle.focus.active {
+  outline: none;
+}
+
+.btn-toggle:before,
+.btn-toggle:after {
+  line-height: 1.5rem;
+  width: 4rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+.btn-toggle:before {
+  content: 'AR';
+  left: -4rem;
+}
+
+.btn-toggle:after {
+  content: 'EN';
+  right: -4rem;
+  opacity: 0.5;
+}
+
+.btn-toggle > .handle {
+  position: absolute;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 1.125rem;
+  background: #fff;
+  -webkit-transition: left 0.25s;
+  transition: left 0.25s;
+}
+
+.btn-toggle.active {
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.btn-toggle.active > .handle {
+  left: 1.6875rem;
+  -webkit-transition: left 0.25s;
+  transition: left 0.25s;
+}
+
+.btn-toggle.active:before {
+  opacity: 0.5;
+}
+
+.btn-toggle.active:after {
+  opacity: 1;
+}
+
+.btn-toggle.btn-sm:before,
+.btn-toggle.btn-sm:after {
+  line-height: -0.5rem;
+  color: #fff;
+  letter-spacing: 0.75px;
+  left: 0.4125rem;
+  width: 2.325rem;
+}
+
+.btn-toggle.btn-sm:before {
+  text-align: right;
+}
+
+.btn-toggle.btn-sm:after {
+  text-align: left;
+  opacity: 0;
+}
+
+.btn-toggle.btn-sm.active:before {
+  opacity: 0;
+}
+
+.btn-toggle.btn-sm.active:after {
+  opacity: 1;
+}
+
+.btn-toggle.btn-xs:before,
+.btn-toggle.btn-xs:after {
+  display: none;
+}
+
+.btn-toggle:before,
+.btn-toggle:after {
+  color: #6b7381;
+}
+
+.btn-toggle.active {
+  background-color: #ffb600;
+}
+
+.btn-toggle.btn-lg.btn-sm:before,
+.btn-toggle.btn-lg.btn-sm:after {
+  line-height: 0.5rem;
+  color: #fff;
+  letter-spacing: 0.75px;
+  left: 0.6875rem;
+  width: 3.875rem;
+}
+
+.btn-toggle.btn-lg.btn-sm:before {
+  text-align: right;
+}
+
+.btn-toggle.btn-lg.btn-sm:after {
+  text-align: left;
+  opacity: 0;
+}
+
+.btn-toggle.btn-lg.btn-sm.active:before {
+  opacity: 0;
+}
+
+.btn-toggle.btn-lg.btn-sm.active:after {
+  opacity: 1;
+}
+
+.btn-toggle.btn-lg.btn-xs:before,
+.btn-toggle.btn-lg.btn-xs:after {
+  display: none;
+}
+
+.btn-toggle.btn-sm {
+  margin: 0 0.5rem;
+  padding: 0;
+  position: absolute;
+  border: none;
+  height: 1.5rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+}
+
+.btn-toggle.btn-sm:focus,
+.btn-toggle.btn-sm.focus,
+.btn-toggle.btn-sm:focus.active,
+.btn-toggle.btn-sm.focus.active {
+  outline: none;
+}
+
+.btn-toggle.btn-sm:before,
+.btn-toggle.btn-sm:after {
+  line-height: 1.5rem;
+  width: 0.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+.btn-toggle.btn-sm:before {
+  content: 'AR';
+  left: -0.5rem;
+}
+
+.btn-toggle.btn-sm:after {
+  content: 'EN';
+  right: -0.5rem;
+  opacity: 0.5;
+}
+
+.btn-toggle.btn-sm > .handle {
+  position: absolute;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 1.125rem;
+  background: #fff;
+  -webkit-transition: left 0.25s;
+  transition: left 0.25s;
+}
+
+.btn-toggle.btn-sm.active {
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.btn-toggle.btn-sm.active > .handle {
+  left: 1.6875rem;
+  -webkit-transition: left 0.25s;
+  transition: left 0.25s;
+}
+
+.btn-toggle.btn-sm.active:before {
+  opacity: 0.5;
+}
+
+.btn-toggle.btn-sm.active:after {
+  opacity: 1;
+}
+
+.btn-toggle.btn-sm.btn-sm:before {
+  line-height: -0.5rem;
+  color: #fff;
+  letter-spacing: 0.75px;
+  left: 0.1rem;
+  width: 2.325rem;
+}
+
+.btn-toggle.btn-sm.btn-sm:after {
+  line-height: -0.5rem;
+  color: #fff;
+  letter-spacing: 0.75px;
+  left: 0.6rem;
+  width: 2.325rem;
+}
+
+.btn-toggle.btn-sm.btn-sm:before {
+  text-align: right;
+}
+
+.btn-toggle.btn-sm.btn-sm:after {
+  text-align: left;
+  opacity: 0;
+}
+
+.btn-toggle.btn-sm.btn-sm.active:before {
+  opacity: 0;
+}
+
+.btn-toggle.btn-sm.btn-sm.active:after {
+  opacity: 1;
+}
+
+.btn-toggle.btn-sm.btn-xs:before,
+.btn-toggle.btn-sm.btn-xs:after {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
