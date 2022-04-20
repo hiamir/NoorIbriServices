@@ -2280,7 +2280,7 @@ label {
 
 #contact{
   padding-top: 0%;     
-  padding-bottom: 0%;  
+  padding-bottom: 3rem;  
 }
 
 @media (max-width: 991px) {
@@ -2296,13 +2296,21 @@ section{
   padding-top:5rem !important;
 }
 
-#contact{
+#subscribe{
   padding-bottom:2rem !important;
 }
 
 #message,#contact{
   padding-top:5rem !important;
 
+}
+#contact{
+  padding-bottom:3rem !important;
+
+}
+
+#newsletter-email{
+  text-align: center;
 }
 
 #footer .footer-main{
