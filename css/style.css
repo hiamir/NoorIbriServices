@@ -716,7 +716,7 @@ ul.top-info li p.info-text {
 }
 
 .header-one .logo-area {
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .navbar-fixed {
@@ -758,8 +758,13 @@ ul.navbar-nav > li.active > a {
 
 /*-- Logo --*/
 .logo img {
-  width: auto;
-  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  padding-right: 1rem;
 }
 
 .header-two .logo img {
@@ -769,6 +774,7 @@ ul.navbar-nav > li.active > a {
 /* header right */
 .header-right {
   float: right;
+  padding: 30px 0;
 }
 
 ul.top-info-box {
@@ -865,6 +871,83 @@ ul.top-info-box li .info-box .info-box-subtitle {
   font-size: 15px;
   font-weight: 700;
   color: #111;
+}
+
+@media (max-width: 991px) and (orientation: landscape) {
+  .logo-area {
+    padding: 0px 0;
+  }
+  #top-bar .row .col-lg-4 {
+    display: none;
+  }
+  .logo-area .logo {
+    padding: 0px;
+    margin: 0px !important;
+    max-width: 300px;
+  }
+  .header-right ul.top-info-box {
+    float: left;
+  }
+}
+
+@media (max-width: 991px) and (orientation: portrait) {
+  .bg-white {
+    padding: 0rem 2rem;
+  }
+  .info-box-title {
+    display: inline;
+  }
+  .info-box-subtitle {
+    display: inline;
+  }
+  #top-bar .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #top-bar .row .col-lg-8 {
+    text-align: center;
+  }
+  #top-bar .row .col-lg-8 ul {
+    text-align: center !important;
+  }
+  #top-bar .row .col-lg-8 ul li {
+    text-align: center;
+    margin: 0rem;
+    padding-right: 0rem;
+  }
+  #top-bar .row .col-lg-4 {
+    display: none;
+  }
+  .logo-area a {
+    padding: 0px 0;
+  }
+  .logo-area .company-logo {
+    margin: 0px auto;
+    max-width: 300px;
+  }
+  .logo-area .logo {
+    padding: 0px;
+    margin: 0px !important;
+  }
+  .header-right {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: none;
+    margin: 0px auto;
+  }
+  .header-right ul.top-info-box {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+  .header-right ul.top-info-box li {
+    display: block;
+    padding-right: 0px;
+  }
+  .header-right ul.top-info-box li:last-child {
+    float: left;
+  }
 }
 
 /*-- Search start --*/
